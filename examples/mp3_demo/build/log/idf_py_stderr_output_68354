@@ -1,0 +1,49 @@
+CMake Error at /Users/mzy/esp/esp-idf/tools/cmake/build.cmake:519 (message):
+  Traceback (most recent call last):
+
+    File "<frozen runpy>", line 198, in _run_module_as_main
+    File "<frozen runpy>", line 88, in _run_code
+    File "/Users/mzy/.espressif/python_env/idf5.0_py3.11_env/lib/python3.11/site-packages/idf_component_manager/prepare_components/__main__.py", line 6, in <module>
+      main()
+    File "/Users/mzy/.espressif/python_env/idf5.0_py3.11_env/lib/python3.11/site-packages/idf_component_manager/prepare_components/prepare.py", line 124, in main
+      args.func(args)
+    File "/Users/mzy/.espressif/python_env/idf5.0_py3.11_env/lib/python3.11/site-packages/idf_component_manager/prepare_components/prepare.py", line 31, in prepare_dep_dirs
+      ).prepare_dep_dirs(
+        ^^^^^^^^^^^^^^^^^
+    File "/Users/mzy/.espressif/python_env/idf5.0_py3.11_env/lib/python3.11/site-packages/idf_component_manager/core.py", line 61, in wrapper
+      return func(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/Users/mzy/.espressif/python_env/idf5.0_py3.11_env/lib/python3.11/site-packages/idf_component_manager/core.py", line 436, in prepare_dep_dirs
+      downloaded_component_paths, downloaded_component_version_dict = download_project_dependencies(
+                                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/Users/mzy/.espressif/python_env/idf5.0_py3.11_env/lib/python3.11/site-packages/idf_component_manager/dependencies.py", line 158, in download_project_dependencies
+      download_path = fetcher.download()
+                      ^^^^^^^^^^^^^^^^^^
+    File "/Users/mzy/.espressif/python_env/idf5.0_py3.11_env/lib/python3.11/site-packages/idf_component_tools/sources/fetcher.py", line 53, in download
+      return self.source.download(self.component, self.managed_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/Users/mzy/.espressif/python_env/idf5.0_py3.11_env/lib/python3.11/site-packages/idf_component_tools/sources/web_service.py", line 223, in download
+      copy_directory(self.component_cache_path(component), download_path)
+    File "/Users/mzy/.espressif/python_env/idf5.0_py3.11_env/lib/python3.11/site-packages/idf_component_tools/file_tools.py", line 120, in copy_directory
+      copytree(source_directory, destination_directory)
+    File "/opt/homebrew/Cellar/python@3.11/3.11.3/Frameworks/Python.framework/Versions/3.11/lib/python3.11/shutil.py", line 561, in copytree
+      return _copytree(entries=entries, src=src, dst=dst, symlinks=symlinks,
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/opt/homebrew/Cellar/python@3.11/3.11.3/Frameworks/Python.framework/Versions/3.11/lib/python3.11/shutil.py", line 515, in _copytree
+      raise Error(errors)
+
+  shutil.Error:
+  [('/Users/mzy/Library/Caches/Espressif/ComponentManager/service_47a9c9ba/chmorgan__esp-audio-player_1.0.4_6761973f/audio_wav.cpp',
+  '/Users/mzy/Desktop/ESP-BOX/esp-box/examples/mp3_demo/managed_components/chmorgan__esp-audio-player/audio_wav.cpp',
+  '[Errno 2] No such file or directory'),
+  ('/Users/mzy/Library/Caches/Espressif/ComponentManager/service_47a9c9ba/chmorgan__esp-audio-player_1.0.4_6761973f/include',
+  '/Users/mzy/Desktop/ESP-BOX/esp-box/examples/mp3_demo/managed_components/chmorgan__esp-audio-player/include',
+  "[Errno 17] File exists:
+  '/Users/mzy/Desktop/ESP-BOX/esp-box/examples/mp3_demo/managed_components/chmorgan__esp-audio-player/include'")]
+
+
+Call Stack (most recent call first):
+  /Users/mzy/esp/esp-idf/tools/cmake/project.cmake:447 (idf_build_process)
+  CMakeLists.txt:14 (project)
+
+

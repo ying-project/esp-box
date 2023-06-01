@@ -1,0 +1,54 @@
+-- Found Git: /usr/bin/git (found version "2.39.2 (Apple Git-143)") 
+-- The C compiler identification is GNU 11.2.0
+-- The CXX compiler identification is GNU 11.2.0
+-- The ASM compiler identification is GNU
+-- Found assembler: /Users/mzy/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/xtensa-esp32s3-elf-gcc
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /Users/mzy/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/xtensa-esp32s3-elf-gcc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /Users/mzy/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/xtensa-esp32s3-elf-g++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Building ESP-IDF components for target esp32s3
+Solving dependencies requirements
+..........................................................................................................................................................................................................................................................................................................................................................................................................................................Updating lock file at /Users/mzy/Desktop/ESP-BOX/esp-box/examples/image_display/dependencies.lock
+Processing 7 dependencies:
+[1/7] espressif/es8311 (1.0.0)
+[2/7] espressif/esp-box (2.3.3)
+[3/7] espressif/esp_lcd_touch (1.0.4)
+[4/7] espressif/esp_lcd_touch_tt21100 (1.0.7~1)
+[5/7] espressif/esp_lvgl_port (1.1.0)
+[6/7] idf (5.0.2)
+[7/7] lvgl/lvgl (8.3.7)
+-- Project sdkconfig file /Users/mzy/Desktop/ESP-BOX/esp-box/examples/image_display/sdkconfig
+Loading defaults file /Users/mzy/Desktop/ESP-BOX/esp-box/examples/image_display/sdkconfig.defaults...
+/Users/mzy/Desktop/ESP-BOX/esp-box/examples/image_display/sdkconfig.defaults:10 CONFIG_ESP32S3_SPIRAM_SUPPORT was replaced with CONFIG_SPIRAM
+-- Looking for sys/types.h
+-- Looking for sys/types.h - found
+-- Looking for stdint.h
+-- Looking for stdint.h - found
+-- Looking for stddef.h
+-- Looking for stddef.h - found
+-- Check size of time_t
+-- Check size of time_t - done
+-- Found Python3: /Users/mzy/.espressif/python_env/idf5.0_py3.11_env/bin/python (found version "3.11.3") found components: Interpreter 
+-- Performing Test C_COMPILER_SUPPORTS_WFORMAT_SIGNEDNESS
+-- Performing Test C_COMPILER_SUPPORTS_WFORMAT_SIGNEDNESS - Success
+-- App "image_display" version: v0.3.0-75-g7e5256f
+-- Adding linker script /Users/mzy/Desktop/ESP-BOX/esp-box/examples/image_display/build/esp-idf/esp_system/ld/memory.ld
+-- Adding linker script /Users/mzy/esp/esp-idf/components/esp_system/ld/esp32s3/sections.ld.in
+-- Adding linker script /Users/mzy/esp/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.ld
+-- Adding linker script /Users/mzy/esp/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.api.ld
+-- Adding linker script /Users/mzy/esp/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.libgcc.ld
+-- Adding linker script /Users/mzy/esp/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.newlib.ld
+-- Adding linker script /Users/mzy/esp/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.version.ld
+-- Adding linker script /Users/mzy/esp/esp-idf/components/soc/esp32s3/ld/esp32s3.peripherals.ld
+-- Components: app_trace app_update bootloader bootloader_support bt cmock console cxx driver efuse esp-tls esp_adc esp_app_format esp_common esp_eth esp_event esp_gdbstub esp_hid esp_http_client esp_http_server esp_https_ota esp_https_server esp_hw_support esp_lcd esp_local_ctrl esp_netif esp_partition esp_phy esp_pm esp_psram esp_ringbuf esp_rom esp_system esp_timer esp_wifi espcoredump espressif__es8311 espressif__esp-box espressif__esp_lcd_touch espressif__esp_lcd_touch_tt21100 espressif__esp_lvgl_port esptool_py fatfs freertos hal heap http_parser idf_test ieee802154 json log lvgl__lvgl lwip main mbedtls mqtt newlib nvs_flash openthread partition_table perfmon protobuf-c protocomm pthread sdmmc soc spi_flash spiffs tcp_transport touch_element ulp unity usb vfs wear_levelling wifi_provisioning wpa_supplicant xtensa
+-- Component paths: /Users/mzy/esp/esp-idf/components/app_trace /Users/mzy/esp/esp-idf/components/app_update /Users/mzy/esp/esp-idf/components/bootloader /Users/mzy/esp/esp-idf/components/bootloader_support /Users/mzy/esp/esp-idf/components/bt /Users/mzy/esp/esp-idf/components/cmock /Users/mzy/esp/esp-idf/components/console /Users/mzy/esp/esp-idf/components/cxx /Users/mzy/esp/esp-idf/components/driver /Users/mzy/esp/esp-idf/components/efuse /Users/mzy/esp/esp-idf/components/esp-tls /Users/mzy/esp/esp-idf/components/esp_adc /Users/mzy/esp/esp-idf/components/esp_app_format /Users/mzy/esp/esp-idf/components/esp_common /Users/mzy/esp/esp-idf/components/esp_eth /Users/mzy/esp/esp-idf/components/esp_event /Users/mzy/esp/esp-idf/components/esp_gdbstub /Users/mzy/esp/esp-idf/components/esp_hid /Users/mzy/esp/esp-idf/components/esp_http_client /Users/mzy/esp/esp-idf/components/esp_http_server /Users/mzy/esp/esp-idf/components/esp_https_ota /Users/mzy/esp/esp-idf/components/esp_https_server /Users/mzy/esp/esp-idf/components/esp_hw_support /Users/mzy/esp/esp-idf/components/esp_lcd /Users/mzy/esp/esp-idf/components/esp_local_ctrl /Users/mzy/esp/esp-idf/components/esp_netif /Users/mzy/esp/esp-idf/components/esp_partition /Users/mzy/esp/esp-idf/components/esp_phy /Users/mzy/esp/esp-idf/components/esp_pm /Users/mzy/esp/esp-idf/components/esp_psram /Users/mzy/esp/esp-idf/components/esp_ringbuf /Users/mzy/esp/esp-idf/components/esp_rom /Users/mzy/esp/esp-idf/components/esp_system /Users/mzy/esp/esp-idf/components/esp_timer /Users/mzy/esp/esp-idf/components/esp_wifi /Users/mzy/esp/esp-idf/components/espcoredump /Users/mzy/Desktop/ESP-BOX/esp-box/examples/image_display/managed_components/espressif__es8311 /Users/mzy/Desktop/ESP-BOX/esp-box/examples/image_display/managed_components/espressif__esp-box /Users/mzy/Desktop/ESP-BOX/esp-box/examples/image_display/managed_components/espressif__esp_lcd_touch /Users/mzy/Desktop/ESP-BOX/esp-box/examples/image_display/managed_components/espressif__esp_lcd_touch_tt21100 /Users/mzy/Desktop/ESP-BOX/esp-box/examples/image_display/managed_components/espressif__esp_lvgl_port /Users/mzy/esp/esp-idf/components/esptool_py /Users/mzy/esp/esp-idf/components/fatfs /Users/mzy/esp/esp-idf/components/freertos /Users/mzy/esp/esp-idf/components/hal /Users/mzy/esp/esp-idf/components/heap /Users/mzy/esp/esp-idf/components/http_parser /Users/mzy/esp/esp-idf/components/idf_test /Users/mzy/esp/esp-idf/components/ieee802154 /Users/mzy/esp/esp-idf/components/json /Users/mzy/esp/esp-idf/components/log /Users/mzy/Desktop/ESP-BOX/esp-box/examples/image_display/managed_components/lvgl__lvgl /Users/mzy/esp/esp-idf/components/lwip /Users/mzy/Desktop/ESP-BOX/esp-box/examples/image_display/main /Users/mzy/esp/esp-idf/components/mbedtls /Users/mzy/esp/esp-idf/components/mqtt /Users/mzy/esp/esp-idf/components/newlib /Users/mzy/esp/esp-idf/components/nvs_flash /Users/mzy/esp/esp-idf/components/openthread /Users/mzy/esp/esp-idf/components/partition_table /Users/mzy/esp/esp-idf/components/perfmon /Users/mzy/esp/esp-idf/components/protobuf-c /Users/mzy/esp/esp-idf/components/protocomm /Users/mzy/esp/esp-idf/components/pthread /Users/mzy/esp/esp-idf/components/sdmmc /Users/mzy/esp/esp-idf/components/soc /Users/mzy/esp/esp-idf/components/spi_flash /Users/mzy/esp/esp-idf/components/spiffs /Users/mzy/esp/esp-idf/components/tcp_transport /Users/mzy/esp/esp-idf/components/touch_element /Users/mzy/esp/esp-idf/components/ulp /Users/mzy/esp/esp-idf/components/unity /Users/mzy/esp/esp-idf/components/usb /Users/mzy/esp/esp-idf/components/vfs /Users/mzy/esp/esp-idf/components/wear_levelling /Users/mzy/esp/esp-idf/components/wifi_provisioning /Users/mzy/esp/esp-idf/components/wpa_supplicant /Users/mzy/esp/esp-idf/components/xtensa
+-- Configuring done (15.7s)
+-- Generating done (0.3s)
+-- Build files have been written to: /Users/mzy/Desktop/ESP-BOX/esp-box/examples/image_display/build

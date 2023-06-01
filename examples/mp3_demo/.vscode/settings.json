@@ -1,0 +1,8 @@
+{
+    "idf.port": "/dev/cu.Bluetooth-Incoming-Port",
+    "idf.adapterTargetName": "esp32s3",
+    "idf.openOcdConfigs": [
+        "board/esp32s3-builtin.cfg"
+    ],
+    "idf.flashType": "JTAG"
+}
